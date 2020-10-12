@@ -39,7 +39,7 @@ jobs:
         run: docker build . --file dockerfile --tag test-integration-github
       
       - name: docker login
-        run: docker login docker.io -u ${{ secrets.toussaintcarlotti }} --password ${{ secrets.Dx8503d2ip }}
+        run: docker login docker.io -u ${{ secrets.USERNAMEDOCKER }} --password ${{ secrets.PASSWORDDOCKER }}
       
       - name: docker push
         run: |
